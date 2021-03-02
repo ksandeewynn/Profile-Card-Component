@@ -1,0 +1,89 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/* .container::before{content:'';display: block;  margin-top: -50rem; margin-left: -50rem;background-image:url(images/bg-pattern-top.svg); background-repeat: no-repeat; background-size: contain;height:1440px ; } */
+/* .container::after{content:'';display: block;  margin-top: -15rem; margin-left:52rem;background-image: url(images/bg-pattern-bottom.svg);background-repeat: no-repeat; background-size: contain;height:1440px ;} */
+p{font-family: "Kumbh Sans", sans-serif;}
+.container{
+    width: 1440px;
+    margin:0px auto; 
+    background-color:hsl(185, 75%, 39%);
+    height: 600px; 
+    position:relative; 
+    overflow:hidden;}
+.container::before{
+    content: '';
+    display: block; 
+    background-image:url(images/bg-pattern-top.svg); 
+    background-repeat: no-repeat;top: -24rem;
+    left: -12rem;    
+    width: 50rem;
+    height: 50rem;
+    background-size: contain;
+    position: absolute;}
+.container::after{
+    content: '';
+    display: block; 
+    background-image:url(images/bg-pattern-bottom.svg); 
+    background-repeat: no-repeat; 
+    background-size: contain;
+    width: 50rem;height: 50rem;
+    bottom: -30rem;
+    right: -4rem;
+    position: absolute;}
+
+.card{
+    display:block;
+    position: absolute; 
+    left:34%; 
+    top:25%; 
+    margin:0 auto; 
+    background-color:#ffffff; 
+    width: 350px;
+    box-shadow: 2px 2px 20px 0px hsl(229deg 3% 40%);
+    border-radius: 20px;
+    text-align: center;
+    z-index: 1;}
+ 
+.cardtop{border-radius: 20px 20px 0 0;}    
+img.profile{margin-top:-4rem; border:#ffffff 4px solid; border-radius: 50px;}
+
+section.datacard{background-color:hsl(185, 75%, 39%);}
+
+p.name{font-size: 18px; font-weight: 700; color:hsl(229, 23%, 23%);margin-bottom: 8px;}
+p.city{font-size: 15px;color:hsl(0, 0%, 59%)}
+p.info{font-size: 13px;color:hsl(0, 0%, 59%); margin-top: 3px;}
+span{font-weight: 400;color:hsl(0, 0%, 59%)}
+.infocard {
+    border-top: hsl(0deg 0% 90%) 1px solid;
+    margin-top: 25px;
+}
+ul{display: flex; flex-wrap: wrap; margin:0; list-style: none;}
+li{padding:5px 22px}
+
+
+@media screen and (max-width:765px){
+    .container{
+        width: 100%;
+        margin:0px auto; 
+        background-color:hsl(185, 75%, 39%);
+        height: 800px; 
+        position:relative; 
+        overflow:hidden;}
+    .container::before{
+            top:-12rem;
+            left: -17rem;    
+            width: 30rem;
+            height: 30rem;}
+    .container::after{
+            width: 30rem;
+            height: 30rem;
+            bottom: -8rem;
+            right: -14rem;}
+    .card{
+        left:5%; 
+        top:25%; 
+        width: 90%;}
+    .cardtop{
+        width:100%
+    }            
+}
