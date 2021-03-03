@@ -7,7 +7,7 @@ p{font-family: "Kumbh Sans", sans-serif;}
     width: 1440px;
     margin:0px auto; 
     background-color:hsl(185, 75%, 39%);
-    height: 600px; 
+    height: 100vh; 
     position:relative; 
     overflow:hidden;}
 .container::before{
